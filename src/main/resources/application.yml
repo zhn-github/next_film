@@ -2,7 +2,7 @@ server:
   port: 8080
 
 rest:
-  auth-open: true         #若果为true，则开启JWT验证
+  auth-open: false         #若果为true，则开启JWT验证
 
 jwt:
   header: Authorization   #http请求头所需要的字段
@@ -30,4 +30,7 @@ logging:
   level.com.next.zhn: debug
   path: logs/
   file: next-film.log
+
+film:
+  img-pre: http://img.nextFilm.cn/
 
